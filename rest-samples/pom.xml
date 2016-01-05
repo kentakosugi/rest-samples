@@ -56,12 +56,14 @@
 			<version>2.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- dependency>
-			<groupId>com.wordnik</groupId>
-			<artifactId>swagger-jersey-jaxrs_2.10</artifactId>
-			<version>1.3.12</version>
-			<scope>runtime</scope>
-		</dependency-->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jaxrs</artifactId>
+			<version>1.5.4</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- dependency> <groupId>com.wordnik</groupId> <artifactId>swagger-jersey-jaxrs_2.10</artifactId> 
+			<version>1.3.12</version> <scope>runtime</scope> </dependency -->
 
 		<!-- test(単体テストのときのみ) -->
 		<dependency>

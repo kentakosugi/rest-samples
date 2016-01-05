@@ -12,9 +12,11 @@ import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 
+import io.swagger.annotations.Api;
 import jp.co.techmatrix.store.model.Book;
 import jp.co.techmatrix.store.services.Cart;
 
@@ -27,6 +29,7 @@ import jp.co.techmatrix.store.services.Cart;
 @RequestScoped
 @Transactional
 @Path("/cart")
+@Api(value = "/cart", produces = MediaType.APPLICATION_JSON + ";charset=UTF-8;")
 public class CartResource implements Cart{
 
 	/**
